@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <android.support.v7.widget.CardView
+        android:background="@drawable/item_bg_shape"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/rootlyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image_notice_banner"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:civ_border_color="#FF000000"
+                android:src="@drawable/ic_student_area" />
+
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@+id/image_notice_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notice Tittle"
+                    android:maxLines="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_no_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ellipsize="end"
+                    android:hint="date"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
